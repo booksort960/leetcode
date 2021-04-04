@@ -1,4 +1,4 @@
-//struct ListNode* ReverseList(struct ListNode* pHead)
+ //struct ListNode* ReverseList(struct ListNode* pHead)
 //{
 //    if (pHead == NULL)
 //        return NULL;
@@ -18,7 +18,7 @@
 //}
 struct ListNode* ReverseList(struct ListNode* pHead)
 {
-	if (pHead == NULL||pHead==NULL)
+	if (pHead == NULL||pHead->next==NULL)
 		return pHead;
 	struct ListNode* nhead = ReverseList(pHead->next);
 	pHead->next->next = pHead;
